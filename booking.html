@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Travel Agency</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">AroundTheWorld</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="booking.html">Booking</a></li>
+        </ul>
+    </nav>
+    <main class="container mx-auto p-6">
+        <h2 class="text-2xl font-semibold text-center">Book Your Trip</h2>
+        <form class="bg-white shadow-md p-6 rounded-lg mt-6 max-w-lg mx-auto" color="purple">
+            <label class="block font-semibold">Name</label>
+            <input type="text" class="w-full border p-2 rounded-lg mb-4" placeholder="Your Name" required>
+
+            <label class="block font-semibold">Email</label>
+            <input type="email" class="w-full border p-2 rounded-lg mb-4" placeholder="Your Email" required>
+
+            <label class="block font-semibold">Destination</label>
+            <select class="w-full border p-2 rounded-lg mb-4" required>
+                <option>Bali, Indonesia</option>
+                <option>Paris, France</option>
+                <option>Kyoto, Japan</option>
+                <option>Agra, India</option>
+                <option>London, UK</option>
+                <option>Germany</option>
+                <option>Egypt</option>
+            </select>
+
+            <label class="block font-semibold">Travel Date</label>
+            <input type="date" class="w-full border p-2 rounded-lg mb-4" required>
+
+            <button class="w-full bg-green-500 text-white p-2 rounded-lg shadow-md hover:bg-green-600">Submit Booking</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

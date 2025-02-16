@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - AroundTheWorld</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .destination-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 100px 50px 50px;
+            text-align: center;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .destination {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .destination:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .destination img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .destination:hover img {
+            opacity: 0.8;
+        }
+        .destination-info {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            width: 100%;
+            padding: 15px;
+            font-family: 'Poppins', sans-serif;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .destination:hover .destination-info {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">AroundTheWorld</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="booking.html">Booking</a></li>
+        </ul>
+    </nav>
+    
+    <section class="destination-container">
+        <a href="booking.html?destination=India" class="destination">
+            <img src="india.jpg" alt="India">
+            <div class="destination-info">
+                <h2>India</h2>
+                <p>Experience the rich culture, heritage, and diverse landscapes of India.</p>
+            </div>
+        </a>
+        <a href="booking.html?destination=Japan" class="destination">
+            <img src="japan.jpg" alt="Japan">
+            <div class="destination-info">
+                <h2>Japan</h2>
+                <p>Discover the land of the rising sun, blending tradition with modernity.</p>
+            </div>
+        </a>
+        <a href="booking.html?destination=London" class="destination">
+            <img src="london.jpg" alt="London">
+            <div class="destination-info">
+                <h2>London</h2>
+                <p>Explore the historic landmarks and vibrant culture of the UK’s capital.</p>
+            </div>
+        </a>
+        <a href="booking.html?destination=Paris" class="destination">
+            <img src="paris.jpg" alt="Paris">
+            <div class="destination-info">
+                <h2>Paris</h2>
+                <p>Fall in love with the city of lights, known for art, romance, and fashion.</p>
+            </div>
+        </a>
+        <a href="booking.html?destination=Germany" class="destination">
+            <img src="germany.jpg" alt="Germany">
+            <div class="destination-info">
+                <h2>Germany</h2>
+                <p>Experience Germany’s history, innovation, and stunning landscapes.</p>
+            </div>
+        </a>
+        <a href="booking.html?destination=Indonesia" class="destination">
+            <img src="indonesia.jpg" alt="Indonesia">
+            <div class="destination-info">
+                <h2>Indonesia</h2>
+                <p>Visit the tropical paradise of Indonesia, home to breathtaking islands.</p>
+            </div>
+        </a>
+        <a href="booking.html?destination=Egypt" class="destination">
+            <img src="egypt.jpg" alt="Egypt">
+            <div class="destination-info">
+                <h2>Egypt</h2>
+                <p>Marvel at the ancient wonders of Egypt, from pyramids to the Nile.</p>
+            </div>
+        </a>
+    </section>
+</body>
+</html>
