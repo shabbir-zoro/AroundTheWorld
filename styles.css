@@ -58,8 +58,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #0B2F9F;
-    background-image:
+    background-image:url(space.jpg)
     repeating-linear-gradient(
         to right, transparent 0 100px,
         #131628a6 100px 101px
